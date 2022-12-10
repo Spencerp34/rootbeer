@@ -6,7 +6,6 @@ const Home = () => {
     return(
         <section>
             <HomeStyle>
-                <h1>Home Page</h1>
                 <Header />
                 <img src={AWGif} alt="fizzy fill up" />
                 <img src={AWGif} alt="fizzy fill up" />
