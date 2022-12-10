@@ -1,14 +1,15 @@
 import HomeStyle from "./home.style";
-import { useState, useEffect } from "react";
+import {Link} from "react-router-dom";
 
 const Home = () => {
-    const [loggedIn, setIsLoggedIn] = useState(false)
-
     return(
         <section>
             <HomeStyle>
                 <h1>Home Page</h1>
-                <p>Logged in? {loggedIn ? "Yes" : "No"}</p>
+                <p>Logged in? {true ? "Yes" : "No"}</p>
+                <Link to="/login" > Log in</Link> 
+                <br/>
+                <Link to="/login" > Sign Up</Link>
             </HomeStyle>
         </section>
     )
