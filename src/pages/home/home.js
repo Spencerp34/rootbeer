@@ -1,15 +1,19 @@
 import HomeStyle from "./home.style";
-import {Link} from "react-router-dom";
+import Header from "../../components/header/header";
+import AWGif from "../../assets/A&Wgif.gif"
 
 const Home = () => {
     return(
         <section>
             <HomeStyle>
                 <h1>Home Page</h1>
-                <p>Logged in? {true ? "Yes" : "No"}</p>
-                <Link to="/login" > Log in</Link> 
-                <br/>
-                <Link to="/login" > Sign Up</Link>
+                <Header />
+                <img src={AWGif} alt="fizzy fill up" />
+                <img src={AWGif} alt="fizzy fill up" />
+                <img src={AWGif} alt="fizzy fill up" />
+                <img src={AWGif} alt="fizzy fill up" />
+                <img src={AWGif} alt="fizzy fill up" />
+                <img src={AWGif} alt="fizzy fill up" />
             </HomeStyle>
         </section>
     )
