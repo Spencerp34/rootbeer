@@ -9,14 +9,16 @@ const Header = () => {
             <h1>Root Beer Ratings</h1>
             <div className="bottom-header">
                 <div className="login">
-                    <p>Voice your opinion:</p>
                     {loggedIn 
                         ? 
                             <p>Spencer P</p>
-                        :   <div className="buttons" >
-                                <Link className="button" to="/login" > Log in</Link> 
-                                <br/>
-                                <Link className="button" to="/login" > Sign Up</Link>
+                        :   <div className="logged-out">
+                                <p>Voice your opinion:</p>
+                                <div className="buttons" >
+                                    <Link className="button" id="login" to="/login" > Log in</Link> 
+                                    <br/>
+                                    <Link className="button" id="signup" to="/login" > Sign Up</Link>
+                                </div>
                             </div>
                     }
                 </div>
