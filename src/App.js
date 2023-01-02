@@ -4,6 +4,7 @@ import Home from './pages/home/home';
 import Auth from './pages/auth/auth';
 import Header from './components/header/header';
 import AWGif from "./assets/A&Wgif.gif"
+import Banner from './components/banners/banner';
 
 function App() {
   return (
@@ -11,14 +12,14 @@ function App() {
       <div className="App">
         <Header/>
         <div className='margined'>
-        <img src={AWGif} width="200px" alt="Left Ad" />
+        <Banner />
           <div className='content'>
             <Switch>
                 <Route path='/login' component={Auth} />
                 <Route path='/'component={Home} />
             </Switch>
           </div>
-          <img src={AWGif} width="200px" alt="Right Ad" />
+          <Banner />
         </div>
           
         {/* <Footer /> */}

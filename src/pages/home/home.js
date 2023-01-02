@@ -5,12 +5,7 @@ const Home = () => {
     return(
         <section>
             <HomeStyle>
-                <img src={AWGif} alt="fizzy fill up" />
-                <img src={AWGif} alt="fizzy fill up" />
-                <img src={AWGif} alt="fizzy fill up" />
-                <img src={AWGif} alt="fizzy fill up" />
-                <img src={AWGif} alt="fizzy fill up" />
-                <img src={AWGif} alt="fizzy fill up" />
+                <div className="ex"></div>
             </HomeStyle>
         </section>
     )
