@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 const HeaderStyle = styled.div`
 
+    background-color: #f2e1c1;
+    padding: 15px;
+
     .bottom-header {
         display: flex;
         justify-content: end;
@@ -35,7 +38,7 @@ const HeaderStyle = styled.div`
     }
 
     #login {
-        background-color: #f2e1c1;
+        background-color: transparent;
         color: #5B3A0A;
         border: 2px solid #5B3A0A;
     }
