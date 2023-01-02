@@ -4,7 +4,7 @@ const Card = () => {
     return(
         <section>
             <CardStyle>
-                <div className="ex"></div>
+                <div className="ex">A&W</div>
             </CardStyle>
         </section>
     )
