@@ -1,10 +1,16 @@
 import HomeStyle from "./home.style";
+import Card from "../../components/card/card";
 
 const Home = () => {
     return(
         <section>
             <HomeStyle>
-                <div className="ex"></div>
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
             </HomeStyle>
         </section>
     )
