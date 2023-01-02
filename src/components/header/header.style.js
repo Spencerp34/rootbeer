@@ -1,8 +1,11 @@
 import styled from "styled-components";
+import { Theme } from "../../constants";
+
+const {creme, rbBrown} = Theme;
 
 const HeaderStyle = styled.div`
 
-    background-color: #f2e1c1;
+    background-color: ${creme};
     padding: 15px;
 
     .bottom-header {
@@ -29,8 +32,8 @@ const HeaderStyle = styled.div`
         justify-content: center;
         align-items: center;
         padding: 15px;
-        background-color: #5B3A0A;
-        color: #f2e1c1;
+        background-color: ${rbBrown};
+        color: ${creme};
         margin-left: 5px;
         border-radius: 5px;
         text-align: center;
@@ -39,18 +42,18 @@ const HeaderStyle = styled.div`
 
     #login {
         background-color: transparent;
-        color: #5B3A0A;
-        border: 2px solid #5B3A0A;
+        color: ${rbBrown};
+        border: 2px solid ${rbBrown};
     }
     #signup {
-        background-color: #5B3A0A;
-        color: #f2e1c1;
-        border: 2px solid #5B3A0A;
+        background-color: ${rbBrown};
+        color: ${creme};
+        border: 2px solid ${rbBrown};
     }
     h1 {
         font-family: 'Lobster', cursive;
         font-size: 42px;
-        color: #5B3A0A;
+        color: ${rbBrown};
     }
 `;
 
