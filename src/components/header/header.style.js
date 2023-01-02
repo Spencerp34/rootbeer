@@ -44,6 +44,11 @@ const HeaderStyle = styled.div`
         color: #f2e1c1;
         border: 2px solid #5B3A0A;
     }
+    h1 {
+        font-family: 'Lobster', cursive;
+        font-size: 42px;
+        color: #5B3A0A;
+    }
 `;
 
 export default HeaderStyle;
