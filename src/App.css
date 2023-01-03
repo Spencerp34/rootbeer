@@ -7,4 +7,5 @@
 
 .margined {
   display: flex;
+  justify-content: center;
 }
