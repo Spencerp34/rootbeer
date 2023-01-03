@@ -17,6 +17,12 @@ const HeaderStyle = styled.div`
         display: flex;
     }
 
+    .logged-in {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+    }
+
     .login {
         width: 20%;
         display: flex;
