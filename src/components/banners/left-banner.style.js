@@ -8,6 +8,7 @@ const LeftBannerStyle = styled.div`
     height: 600px;
     overflow: hidden;
     position: fixed;
+    left: 0;
 `
 
 export default LeftBannerStyle;
