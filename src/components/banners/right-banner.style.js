@@ -8,6 +8,8 @@ const RightBannerStyle = styled.div`
     width: 10vw;
     height: 600px;
     overflow: hidden;
+    position: fixed;
+    right: 0;
 `
 
 export default RightBannerStyle;
