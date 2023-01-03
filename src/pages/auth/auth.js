@@ -1,16 +1,23 @@
 import AuthStyle from "./auth.style";
-import { useState } from "react";
+// import { useEffect } from "react";
 
 const Auth = () => {
-    const [loggedIn, setIsLoggedIn] = useState(false)
+
+    const handleLogIn = () => {
+        window.localStorage.setItem("token", "Spencer Patterson")
+    }
 
     return(
         <section>
             <AuthStyle>
-                <h1>Login/Signup</h1>
-                <p>{loggedIn ? "Logged In" : "Logged Out"}</p>
-                <button onClick={() => setIsLoggedIn(true)} >Log In</button>
-                <button onClick={() => setIsLoggedIn(true)} >Sign Up</button>
+                <h2>Login</h2>
+                <input placeholder="Username" type="text" >
+                </input>
+                <br/>
+                <input placeholder="Password" type="text">
+                </input>
+                <br/>
+                <button onClick={() => handleLogIn()} >Log In</button>
             </AuthStyle>
         </section>
     )
