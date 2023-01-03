@@ -16,12 +16,12 @@ const Card = () => {
                     <img src={Star} width={50} alt="star rating" />
                     <img src={Star} width={50} alt="star rating" />
                 </div>
-                <div className="Consumer Rating">
+                {/* <div className="Consumer Rating">
                     <img src={Star} width={50} alt="star rating" />
                     <img src={Star} width={50} alt="star rating" />
                     <img src={Star} width={50} alt="star rating" />
                     <img src={HalfStar} width={27} alt="half star rating" />
-                </div>
+                </div> */}
             </CardStyle>
         </section>
     )
