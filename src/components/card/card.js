@@ -18,8 +18,11 @@ const Card = (props) => {
 
     const ratingRender = (rating) => {
         let stars = []
-        for(let i = 0; i < rating; i++){
-            stars.push(<img src={Star} width={50} alt="star rating" />)
+        if(rating%1 === 0.5){
+            stars.push( <img src={HalfStar} width={27} alt="half star rating" />)
+        }
+        for(let i = 1; i <= rating; i++){
+            stars.unshift(<img src={Star} width={50} alt="star rating" />)
         }
         return stars
     }
@@ -30,7 +33,7 @@ const Card = (props) => {
                 <div className="ex">A&W</div>
                 <img src={pic} width={"60%"} alt="Root Beer Brand" />
                 <div className="Author Rating">
-                    {ratingRender(4)}
+                    {ratingRender(4.5)}
                 </div>
                 {/* <div className="Consumer Rating">
                     <img src={Star} width={50} alt="star rating" />
