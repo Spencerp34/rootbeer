@@ -30,17 +30,28 @@ const Card = (props) => {
     return(
         <section>
             <CardStyle>
-                <div className="ex">A&W</div>
-                <img src={pic} width={"60%"} alt="Root Beer Brand" />
-                <div className="Author Rating">
-                    {ratingRender(4.5)}
+                <div className="flip-card">
+                    <div className="flip-card-inner">
+                        <div className="front">
+                            <div className="ex">A&W</div>
+                            <img src={pic} width={"60%"} alt="Root Beer Brand" />
+                            <div className="Author Rating">
+                                {ratingRender(4.5)}
+                            </div>
+                        </div>
+                        <div className="back">
+                            <p>A&W</p>
+                            <p>Author Rating:</p>
+                            <div className="Author Rating">
+                                {ratingRender(4.5)}
+                            </div>
+                            <p>Consumer Rating:</p>
+                            <div className="Consumer Rating">
+                                {ratingRender(3)}
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                {/* <div className="Consumer Rating">
-                    <img src={Star} width={50} alt="star rating" />
-                    <img src={Star} width={50} alt="star rating" />
-                    <img src={Star} width={50} alt="star rating" />
-                    <img src={HalfStar} width={27} alt="half star rating" />
-                </div> */}
             </CardStyle>
         </section>
     )
