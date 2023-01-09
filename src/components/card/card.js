@@ -45,10 +45,10 @@ const Card = (props) => {
                             <div className="Author Rating">
                                 {ratingRender(4.5)}
                             </div>
-                            <p>Consumer Rating:</p>
+                            {/* <p>Consumer Rating:</p>
                             <div className="Consumer Rating">
                                 {ratingRender(3)}
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
